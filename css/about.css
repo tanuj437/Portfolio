@@ -72,4 +72,40 @@
   .skill p {
     font-size: 16px;
   }
-  
+  /* Connect Section */
+#connect {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#connect h2 {
+  font-size: 28px;
+  color: #2575fc;
+}
+
+#connect p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.connect-links {
+  list-style: none;
+  padding: 0;
+}
+
+.connect-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.connect-links li a {
+  text-decoration: none;
+  color: #2575fc;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.connect-links li a:hover {
+  color: #6a11cb;
+}
