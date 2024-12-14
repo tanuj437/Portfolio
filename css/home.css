@@ -1,0 +1,96 @@
+/* Global Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d1d1d, #282c34);
+    color: #ffffff;
+  }
+  
+  h1 span {
+    color: #4caf50;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #282c34;
+    padding: 10px 0;
+  }
+  
+  .navbar li {
+    list-style: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #4caf50;
+  }
+  
+  /* Hero Section */
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    min-height: 100vh;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .hero-animation canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1d1d1d;
+  }
+  
+  footer .social-links a {
+    margin: 0 10px;
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  footer .social-links a:hover {
+    color: #ffffff;
+  }
+  
