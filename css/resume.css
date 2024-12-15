@@ -183,3 +183,55 @@ footer {
   color: white;
   border-radius: 0 0 8px 8px;
 }
+@media screen and (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column;
+      align-items: flex-start;
+      display: none; /* Hide items by default */
+  }
+
+  .navbar .menu-icon {
+      display: block;
+  }
+
+  .navbar .menu-icon.active + ul {
+      display: flex; /* Display dropdown menu */
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  .navbar ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+      margin: 10px 0;
+  }
+
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-image img {
+      width: 200px;
+  }
+
+  section h2 {
+      font-size: 1.8rem;
+  }
+}
+
+/* Toggle menu on clicking the menu icon */
+.navbar .menu-icon.active {
+  color: #ccc; /* Change color when active */
+}
+
+.navbar .menu-icon.active + ul {
+  display: flex;
+}
