@@ -6,6 +6,168 @@
   <title>Projects - My Portfolio</title>
   <link rel="stylesheet" href="css/styles.css"> <!-- Global Styles -->
   <link rel="stylesheet" href="css/projects.css"> <!-- Page-Specific Styles -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> <!-- AOS Animations -->
+  <style>
+    /* Inline Enhancements for Projects Page */
+
+    /* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+  color: #f39c12;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+}
+
+    .active {
+      color: #1abc9c;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    #projects-hero {
+      text-align: center;
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      color: white;
+      padding: 4rem 1rem;
+      margin-bottom: 2rem;
+    }
+
+    #projects-hero h1 {
+      font-size: 3rem;
+    }
+
+    #projects-hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    #projects-showcase {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .project {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .project-info h3 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .project-info p {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      margin: 1rem 0;
+    }
+
+    .project-info a {
+      text-decoration: none;
+      color: #1abc9c;
+      font-weight: bold;
+    }
+
+    .project-info a:hover {
+      text-decoration: underline;
+    }
+
+    #projects-cta {
+      text-align: center;
+      margin: 3rem 1rem;
+    }
+
+    #projects-cta h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    #projects-cta p {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    #projects-cta a {
+      color: #1abc9c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #projects-cta a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -15,6 +177,8 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
@@ -22,67 +186,72 @@
 
   <!-- Hero Section -->
   <section id="projects-hero">
-    <h1>My Projects</h1>
-    <p>Explore the projects I’ve worked on, showcasing my skills in Data Science, Machine Learning, and Computer Vision.</p>
-    
+    <h1 data-aos="fade-down">My Projects</h1>
+    <p data-aos="fade-up">Explore the projects I’ve worked on, showcasing my skills in Data Science, Machine Learning, and Computer Vision.</p>
   </section>
 
-  
   <!-- Projects Showcase -->
   <section id="projects-showcase">
-    <div class="project">
-      <img src="images/fintess.png" alt="Project 1">
+    <div class="project" data-aos="zoom-in">
+      <img src="images/fitness.png" alt="Fitness Tracker">
       <div class="project-info">
         <h3>Fitness Tracker</h3>
-        <p>The Fitness Tracker System is a desktop application designed to enhance workout tracking by utilizing computer vision techniques. It accesses a webcam to analyze the user's exercise form, tracks metrics such as calories burned, exercise duration, and the number of sets and repetitions completed. The system provides real-time feedback to help users improve their posture and optimize their workouts.</p>
+        <p>The Fitness Tracker System uses computer vision techniques to analyze workout form and provide real-time feedback for a better exercise experience.</p>
         <a href="https://github.com/tanuj437/Fitness.git" target="_blank">View on GitHub</a>
       </div>
     </div>
 
-    <div class="project">
-      <img src="images/Sentiment.png" alt="Project 2">
+    <div class="project" data-aos="zoom-in" data-aos-delay="100">
+      <img src="images/Sentiment.png" alt="Sentiment Analysis">
       <div class="project-info">
         <h3>Sentiment Analysis</h3>
-        <p>The Sentiment Analysis Web Application is a tool that allows users to analyze the sentiment of textual data, such as product reviews or social media posts. It provides a simple interface where users can input text or upload CSV/Excel files for batch analysis. The application uses machine learning to classify the sentiment of the text into categories like positive, negative, or neutral, offering real-time feedback and allowing users to download the results. Built with Streamlit for the web interface and Scikit-learn for sentiment prediction, it efficiently processes and analyzes large volumes of text data.</p>
+        <p>Analyze textual data for sentiment classification using machine learning models. Includes CSV/Excel support and real-time feedback.</p>
         <a href="https://github.com/tanuj437/Customer-Review-Sentiment-Anaylsis.git" target="_blank">View on GitHub</a>
       </div>
     </div>
 
-    <div class="project">
-      <img src="images/adaptive_ai.png" alt="Project 3">
+    <div class="project" data-aos="zoom-in" data-aos-delay="200">
+      <img src="images/adaptive_ai.png" alt="Adaptive AI Questioning">
       <div class="project-info">
         <h3>Adaptive AI Questioning</h3>
-        <p>Adaptive AI Questioning is an innovative approach to personalized learning, leveraging reinforcement learning algorithms to dynamically adjust the difficulty of questions based on individual student proficiency. By analyzing student responses and adjusting question difficulty in real-time, our system optimizes learning outcomes, enhancing student engagement and performance. With its adaptive nature, the system evolves over time, providing tailored learning experiences that maximize student success.</p>
+        <p>Personalized learning system that adjusts question difficulty dynamically using reinforcement learning algorithms.</p>
         <a href="https://github.com/tanuj437/Adaptive-AI-Questioning.git" target="_blank">View on GitHub</a>
       </div>
     </div>
-    <div class="project">
-      <img src="images/project_QuizArt.png" alt="Project 3">
+
+    <div class="project" data-aos="zoom-in" data-aos-delay="300">
+      <img src="images/project_QuizArt.png" alt="QuizArt">
       <div class="project-info">
         <h3>QuizArt</h3>
-        <p>QuizArt is an interactive quiz application that combines hand gesture recognition and creative drawing. Users can attempt quizzes by painting or drawing on a virtual screen using hand movements. The app tracks hand gestures to allow participants to select answers or draw their responses in an engaging, intuitive way. By leveraging computer vision techniques, the system detects hand motions to interact with the quiz interface, making the quiz-taking experience both fun and interactive. This project integrates gesture recognition, real-time feedback, and creative participation, offering a unique blend of education and entertainment.</p>
+        <p>An interactive quiz application using hand gesture recognition and creative drawing. Engage with quizzes in a unique way.</p>
         <a href="https://github.com/tanuj437/VirtualArt.git" target="_blank">View on GitHub</a>
       </div>
     </div>
-    <div class="project">
-      <img src="images/healthoptimize.png" alt="Project 3">
+
+    <div class="project" data-aos="zoom-in" data-aos-delay="400">
+      <img src="images/healthoptimize.png" alt="HealthOptimized">
       <div class="project-info">
         <h3>HealthOptimized</h3>
-        <p>HealthOptimized is a predictive healthcare application that helps users assess their risk of various diseases, such as diabetes, heart disease, and others, based on personal health data. Users fill out a form with relevant health information, including lifestyle factors, medical history, and symptoms. The app uses machine learning algorithms to analyze this data and predict the likelihood of developing certain conditions. With a user-friendly interface, HealthOptimized provides instant, personalized health insights, helping users take proactive steps toward maintaining their health and preventing potential risks.</p>
+        <p>Predictive healthcare app to assess disease risk based on personal health data. Take proactive steps to maintain your health.</p>
         <a href="https://github.com/tanuj437/HealthOptimized.git" target="_blank">View on GitHub</a>
       </div>
     </div>
   </section>
 
   <!-- Call-to-Action -->
-  <section id="projects-cta">
+  <section id="projects-cta" data-aos="fade-up">
     <h2>Want to see more?</h2>
     <p>Check out my <a href="https://github.com/tanuj437" target="_blank">GitHub</a> for more projects and contributions.</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2024 Tanuj Saxena. All Rights Reserved.</p>
+    <p>&copy; 2024 Tanuj Saxena. All Rights Reserved.</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

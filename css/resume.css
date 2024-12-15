@@ -1,4 +1,42 @@
 /* Global Styles */
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffcd3c;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -46,33 +84,6 @@ body {
   padding: 20px;
 }
 
-/* Navigation Bar */
-header nav {
-  background: #295f6e; /* Updated navbar background */
-  color: white;
-  padding: 10px 20px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-header nav ul li {
-  display: inline;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-header nav ul li a.active {
-  font-weight: bold;
-  text-decoration: underline;
-}
 
 /* Resume Content */
 .resume-content {

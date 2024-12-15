@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tanuj Saxena - Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/home.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body>
@@ -18,6 +19,8 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
@@ -25,20 +28,20 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <div class="hero-content">
-      <h1>Welcome to <span>My Portfolio</span></h1>
-      <p>Explore my projects, skills, and experiences that shape my journey as a developer.</p>
-      <a href="#about" class="btn">Explore More</a>
+    <div class="hero-content animate__animated animate__fadeIn">
+      <h1>Welcome to <span class="highlight">My Portfolio</span></h1>
+      <p>Explore my journey in software development, AI, and data science.</p>
+      <a href="#about" class="btn btn-primary">Explore More</a>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about">
-    <div class="about-content">
+    <div class="about-content" data-aos="fade-up">
       <div class="about-text">
         <h2>About Me</h2>
-        <p>Hi, I’m <strong>Tanuj Saxena</strong>, a passionate Software Developer, Machine Learning enthusiast, and AI advocate dedicated to solving real-world problems through technology.</p>
-        <a href="projects.html" class="btn">See My Projects</a>
+        <p>Hi, I’m <strong>Tanuj Saxena</strong>, a passionate Software Developer and AI enthusiast dedicated to solving real-world problems with cutting-edge technology.</p>
+        <a href="projects.html" class="btn btn-secondary">See My Projects</a>
       </div>
       <div class="about-image">
         <img src="images/me_pp.jpg" alt="Tanuj Saxena" class="about-img">
@@ -46,43 +49,40 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-cards">
-      <div class="project-card">
-        <h3>Fitness Tracker</h3>
-        <p>Built a Fitness Tracker System that provides personalized workout recommendations using Python and machine learning models.</p>
-        <a href="projects.html" class="btn">Learn More</a>
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2 data-aos="fade-right">Achievements</h2>
+    <div class="achievement-cards">
+      <div class="achievement-card" data-aos="zoom-in">
+        <h3>Top Contributor - ML Crate</h3>
+        <p>Contributed to multiple machine learning projects during the Social Summer of Code event.</p>
       </div>
-      <div class="project-card">
-        <h3>Health Optimized Prediction System</h3>
-        <p>Developed a health optimization system that predicts and improves health insurance outcomes using data science techniques.</p>
-        <a href="projects.html" class="btn">Learn More</a>
+      <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Microsoft Azure AI Day</h3>
+        <p>Participated and gained hands-on experience with Azure AI and GitHub tools.</p>
       </div>
-      <div class="project-card">
-        <h3>Sentiment Analysis</h3>
-        <p>The Sentiment Analysis Web Application is a tool that allows users to analyze the sentiment of textual data.</p>
-        <a href="projects.html" class="btn">Learn More</a>
+      <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Lead, DataPool Club</h3>
+        <p>Organized inter-college competitions and workshops in Data Science and AI.</p>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <h3>Programming Languages</h3>
-        <p>Python, JavaScript, C, Java</p>
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2 data-aos="fade-left">Certifications</h2>
+    <div class="certification-cards">
+      <div class="certification-card" data-aos="flip-left">
+        <h3>Data Science with Python</h3>
+        <p>Completed hands-on training in Python and machine learning.</p>
       </div>
-      <div class="skill">
-        <h3>Machine Learning & Data Science</h3>
-        <p>TensorFlow, Scikit-learn, Pandas, NumPy, OpenCV, Keras</p>
+      <div class="certification-card" data-aos="flip-left" data-aos-delay="100">
+        <h3>Azure Fundamentals</h3>
+        <p>Certified in Microsoft Azure cloud computing services.</p>
       </div>
-      <div class="skill">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript, React, Node.js, Express.js</p>
+      <div class="certification-card" data-aos="flip-left" data-aos-delay="200">
+        <h3>Full Stack Development</h3>
+        <p>Built modern web applications with React, Node.js, and Express.js.</p>
       </div>
     </div>
   </section>
@@ -91,12 +91,19 @@
   <footer>
     <p>&copy; 2024 Tanuj Saxena. All rights reserved.</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/tanuj-saxena-970271252/">LinkedIn</a>
-      <a href="https://github.com/tanuj437">GitHub</a>
-      <a href="https://leetcode.com/u/user7401mZ/">LeetCode</a>
-      <a href="https://www.hackerrank.com/profile/tanuj_saxena_rks">HackerRank</a>
+      <a href="https://www.linkedin.com/in/tanuj-saxena-970271252/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/tanuj437" target="_blank">GitHub</a>
+      <a href="https://leetcode.com/u/user7401mZ/" target="_blank">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/tanuj_saxena_rks" target="_blank">HackerRank</a>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
 </body>
 
 </html>
